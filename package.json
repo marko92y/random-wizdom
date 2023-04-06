@@ -2,6 +2,7 @@
   "name": "some-zen",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@react-three/cannon": "^6.5.2",
     "@react-three/drei": "^9.62.2",
@@ -18,6 +19,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.60.0",
     "three": "0.145",
+    "three-stdlib": "^2.21.8",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -44,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/three": "^0.150.1"
   }
 }
