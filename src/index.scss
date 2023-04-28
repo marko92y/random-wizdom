@@ -5,3 +5,15 @@ body, html, #root {
   padding: 0;
   overflow: hidden;
 }
+
+canvas {
+  cursor: none;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+}

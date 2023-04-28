@@ -4,7 +4,6 @@ Command: npx gltfjsx@6.1.4 public/models/dutch_ship_medium_1k.gltf -t -r public
 */
 
 import * as THREE from "three";
-import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 
