@@ -17,3 +17,11 @@ img {
   z-index: 5;
   pointer-events: none;
 }
+
+p{
+  user-select: none;
+}
+
+iframe {
+  user-select: none;
+}
