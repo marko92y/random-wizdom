@@ -18,7 +18,13 @@ const useMousePosition = () => {
 
 const Cursor = () => {
   const { x, y } = useMousePosition();
-  return <img style={{ left: `${x}px`, top: `${y}px` }} src={cursor}></img>;
+  return (
+    <img
+      alt="cursor"
+      style={{ left: `${x}px`, top: `${y}px` }}
+      src={cursor}
+    ></img>
+  );
 };
 
 export default Cursor;
