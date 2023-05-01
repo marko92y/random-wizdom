@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import useMobileDetect from "use-mobile-detect-hook";
+
 import cursor from "../cursor.png";
 
 const useMousePosition = () => {
@@ -17,11 +19,16 @@ const useMousePosition = () => {
 };
 
 const Cursor = () => {
+  const detectMobile = useMobileDetect();
   const { x, y } = useMousePosition();
+
   return (
     <img
       alt="cursor"
-      style={{ left: `${x}px`, top: `${y}px` }}
+      style={{
+        left: `${detectMobile.isMobile() ? 0 : x}px`,
+        top: `${detectMobile.isMobile() ? 0 : y}px`,
+      }}
       src={cursor}
     ></img>
   );

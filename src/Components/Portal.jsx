@@ -1,4 +1,5 @@
 import { Html } from "@react-three/drei";
+import useMobileDetect from 'use-mobile-detect-hook';
 
 export const podcasts = [
   {
@@ -34,12 +35,16 @@ export const podcasts = [
 ];
 
 const Portal = ({ podcast }) => {
+  const detectMobile = useMobileDetect();
+
+  const resolution = detectMobile.isMobile() ? [354, 200] : [560, 315];
+
   return (
     <Html position={podcast.position}>
       <p>{podcast.title}</p>
       <iframe
-        width="560"
-        height="315"
+        width={resolution[0]}
+        height={resolution[1]}
         src={podcast.url}
         title="YouTube video player"
         frameborder="0"

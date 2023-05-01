@@ -20,6 +20,7 @@
     "three": "0.145",
     "three-stdlib": "^2.21.8",
     "typescript": "^4.4.2",
+    "use-mobile-detect-hook": "^1.0.5",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
