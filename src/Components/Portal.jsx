@@ -1,5 +1,5 @@
 import { Html } from "@react-three/drei";
-import useMobileDetect from 'use-mobile-detect-hook';
+import useMobileDetect from "use-mobile-detect-hook";
 
 export const podcasts = [
   {
@@ -15,9 +15,9 @@ export const podcasts = [
   {
     title: `Chuck Palahniuk on the Impact of Fight Club`,
     url: `https://www.youtube.com/embed/GCuSDH-YEKI`,
-    position:[-1500, 400, -100],
+    position: [-1500, 400, -100],
   },
-    {
+  {
     title: `Rehearsal is More Important Than the Show | Joe Rogan & David Lee Roth`,
     url: `https://www.youtube.com/embed/8obt-6jXXlQ`,
     position: [-500, 400, 800],
@@ -25,7 +25,7 @@ export const podcasts = [
   {
     title: `How to Know if You Can be Hypnotized w/Andrew Huberman`,
     url: `https://www.youtube.com/embed/KJ7KjnK5GfA`,
-    position:[1080, 400, 0],
+    position: [1080, 400, 0],
   },
   {
     title: `Travis Barker's Recovery From Near Fatal Plane Crash`,
@@ -48,7 +48,7 @@ const Portal = ({ podcast }) => {
         src={podcast.url}
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"       
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       ></iframe>
     </Html>
   );

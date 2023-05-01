@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
 import useMobileDetect from "use-mobile-detect-hook";
+import { useEffect, useState } from "react";
 
 import cursor from "../cursor.png";
 
 const useMousePosition = () => {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null });
   useEffect(() => {
-    const mouseMoveHandler = (event: { clientX: any; clientY: any }) => {
+    const mouseMoveHandler = (event) => {
       const { clientX, clientY } = event;
       setMousePosition({ x: clientX, y: clientY });
     };
