@@ -16,7 +16,7 @@ root.render(
         crossOrigin="anonymous"
       ></script>
       <meta charSet="utf-8" />
-      <title>My Title</title>
+      <title>Random Wisdom</title>
       <meta
         name="description"
         content="Random Wisdom - Joe Rogan, David Lee Roth, Travis Barker, Chuck Palahniuk, Guy Ritchie, Andrew Huberman"
