@@ -13,7 +13,7 @@ root.render(
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7290248183564409"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></script>
       <meta charSet="utf-8" />
       <title>My Title</title>
